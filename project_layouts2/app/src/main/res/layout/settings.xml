@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/red"
+        android:backgroundTint="#837373"
+        android:backgroundTintMode="screen"
+        android:outlineSpotShadowColor="#E3DFDF">
+
+    <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="410dp"
+            android:layout_height="61dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#9589B8"
+            android:backgroundTintMode="src_over"
+            android:orientation="horizontal"
+            android:outlineAmbientShadowColor="#9589B8"
+            android:outlineSpotShadowColor="#9589B8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992">
+
+        <Button
+                android:id="@+id/my_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:defaultFocusHighlightEnabled="true"
+                android:onClick="my_place"
+                android:text="My Place"
+                android:textColor="#FFF9F9" />
+
+        <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="friendRecommendation"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <Button
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9589B8"
+                android:backgroundTint="#9589B8"
+                android:onClick="player"
+                android:text="Player"
+                android:textColor="#F4F1F1" />
+
+        <Button
+                android:id="@+id/home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="home_page"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/add_image2"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#9589B8"
+            android:onClick="update_image"
+            android:text="Update image"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+            android:id="@+id/textView22"
+            android:layout_width="406dp"
+            android:layout_height="3dp"
+            android:background="#090419"
+            android:backgroundTint="#522FB6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.298" />
+
+    <ImageView
+            android:id="@+id/image_user1"
+            android:layout_width="141dp"
+            android:layout_height="104dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032"
+            app:srcCompat="@drawable/icon" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="383dp"
+            android:layout_height="219dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.526">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:id="@+id/update_password"
+                    style="@style/Base.Widget.MaterialComponents.AutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:baselineAligned="false"
+                    android:ems="10"
+                    android:hint="New Password"
+                    android:inputType="numberPassword"
+                    android:textSize="18sp" />
+
+            <Button
+                    android:id="@+id/button17"
+                    android:layout_width="114dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="7dp"
+                    android:onClick="update_password"
+                    android:text="Save" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="77dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:id="@+id/update_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Description"
+                    android:inputType="textPersonName" />
+
+            <Button
+                    android:id="@+id/save_des"
+                    android:layout_width="114dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="7dp"
+                    android:onClick="update_description"
+                    android:text="Save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/save_all_settings"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#9589B8"
+            android:onClick="save"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.813" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

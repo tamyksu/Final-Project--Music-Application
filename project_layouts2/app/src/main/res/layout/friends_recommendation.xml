@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/purple"
+        android:backgroundTint="#6C6683"
+        android:backgroundTintMode="screen"
+        tools:context="">
+
+    <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="410dp"
+            android:layout_height="61dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#9589B8"
+            android:backgroundTintMode="src_over"
+            android:orientation="horizontal"
+            android:outlineAmbientShadowColor="#9589B8"
+            android:outlineSpotShadowColor="#9589B8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992">
+
+        <Button
+                android:id="@+id/my_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:defaultFocusHighlightEnabled="true"
+                android:onClick="my_place"
+                android:text="My Place"
+                android:textColor="#FFF9F9" />
+
+        <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="friendRecommendation"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <Button
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9589B8"
+                android:backgroundTint="#9589B8"
+                android:onClick="player"
+                android:text="Player"
+                android:textColor="#F4F1F1" />
+
+        <Button
+                android:id="@+id/home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="home_page"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+            android:id="@+id/card_stack_view"
+            android:layout_width="405dp"
+            android:layout_height="499dp"
+            android:layout_marginBottom="20dp"
+            android:clipToPadding="false"
+            android:onClick="home_page"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    </com.yuyakaido.android.cardstackview.CardStackView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

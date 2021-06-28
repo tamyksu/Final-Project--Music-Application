@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/playlist"
+        android:backgroundTint="#171616"
+        android:backgroundTintMode="screen">
+
+    <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="410dp"
+            android:layout_height="61dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#9589B8"
+            android:backgroundTintMode="src_over"
+            android:orientation="horizontal"
+            android:outlineAmbientShadowColor="#9589B8"
+            android:outlineSpotShadowColor="#9589B8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992">
+
+        <Button
+                android:id="@+id/my_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:defaultFocusHighlightEnabled="true"
+                android:onClick="my_place"
+                android:text="My Place"
+                android:textColor="#FFF9F9" />
+
+        <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="friendRecommendation"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <Button
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9589B8"
+                android:backgroundTint="#9589B8"
+                android:onClick="player"
+                android:text="Player"
+                android:textColor="#F4F1F1" />
+
+        <Button
+                android:id="@+id/home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="home_page"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="319dp"
+            android:layout_height="272dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview_requests"
+                android:layout_width="match_parent"
+                android:layout_height="298dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="349dp"
+            android:layout_height="36dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.869">
+
+        <SeekBar
+                android:id="@+id/positionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_dark_default"
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/file_name"
+            android:layout_width="308dp"
+            android:layout_height="31dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+            android:text="Now playing:"
+            android:textColor="#0E0D0D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.359"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.653" />
+
+    <ImageButton
+            android:id="@+id/player_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_pressed"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="play"
+            android:tint="#191717"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.769"
+            app:srcCompat="@android:drawable/ic_media_play"
+            tools:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:onClick="pause"
+            android:src="@android:drawable/ic_media_pause"
+            android:tint="#0C0A0A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.768"
+            tools:src="@android:drawable/ic_media_pause"
+            tools:srcCompat="@android:drawable/ic_media_pause" />
+
+    <TextView
+            android:id="@+id/playlist_name"
+            android:layout_width="180dp"
+            android:layout_height="41dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:text="@string/playlist_name"
+            android:textColor="#0E0D0D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028" />
+
+    <Button
+            android:id="@+id/button4"
+            android:layout_width="145dp"
+            android:layout_height="38dp"
+            android:background="@drawable/button_pressed"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="addNewSong"
+            android:text="Add New Song"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.996"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

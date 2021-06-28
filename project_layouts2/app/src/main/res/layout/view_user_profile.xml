@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/r"
+        android:backgroundTint="#786464"
+        android:backgroundTintMode="screen">
+
+    <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="410dp"
+            android:layout_height="61dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#9589B8"
+            android:backgroundTintMode="src_over"
+            android:orientation="horizontal"
+            android:outlineAmbientShadowColor="#9589B8"
+            android:outlineSpotShadowColor="#9589B8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992">
+
+        <Button
+                android:id="@+id/my_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:defaultFocusHighlightEnabled="true"
+                android:onClick="my_place"
+                android:text="My Place"
+                android:textColor="#FFF9F9" />
+
+        <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="friendRecommendation"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <Button
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9589B8"
+                android:backgroundTint="#9589B8"
+                android:onClick="player"
+                android:text="Player"
+                android:textColor="#F4F1F1" />
+
+        <Button
+                android:id="@+id/home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="home_page"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/image_profile2"
+            android:layout_width="134dp"
+            android:layout_height="94dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.072"
+            app:srcCompat="@drawable/icon" />
+
+    <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="110dp"
+            android:layout_height="29dp"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.264" />
+
+    <TextView
+            android:id="@+id/description"
+            android:layout_width="186dp"
+            android:layout_height="104dp"
+            android:background="@drawable/button_add_song"
+            android:text="Description:"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#28165A"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.072" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="406dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="348dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+                android:id="@+id/user_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_add_song"
+                android:onClick="remove_friend"
+                android:text="Add Friend" />
+
+    </LinearLayout>
+
+
+    <ImageView
+            android:id="@+id/private_count"
+            android:layout_width="378dp"
+            android:layout_height="238dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.776"
+            app:srcCompat="@drawable/private_account" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="playlist_name">Playlist Name:</string>
+
+
+    <string-array name="music_array">
+            <item>Rock</item>
+            <item>Classic</item>
+            <item>Jazz</item>
+            <item>Hip-Hop</item>
+            <item>Country</item>
+            <item>Reggae</item>
+            <item>Metal</item>
+            <item>Disco</item>
+            <item>Pop</item>
+            <item>Blues</item>
+        </string-array>
+
+</resources>

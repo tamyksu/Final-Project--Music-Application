@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/playlist"
+        android:backgroundTint="#3E3838"
+        android:backgroundTintMode="screen">
+
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:autoSizePresetSizes="30dp"
+            android:gravity="center"
+            android:scrollbarStyle="insideInset"
+            android:text="Playlists"
+            android:textColor="#F49A17"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="369dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.544">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview_requests"
+                android:layout_width="match_parent"
+                android:layout_height="341dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="410dp"
+            android:layout_height="61dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#9589B8"
+            android:backgroundTintMode="src_over"
+            android:orientation="horizontal"
+            android:outlineAmbientShadowColor="#9589B8"
+            android:outlineSpotShadowColor="#9589B8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992">
+
+        <Button
+                android:id="@+id/my_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:defaultFocusHighlightEnabled="true"
+                android:onClick="my_place"
+                android:text="My Place"
+                android:textColor="#FFF9F9" />
+
+        <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="friendRecommendation"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <Button
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9589B8"
+                android:backgroundTint="#9589B8"
+                android:onClick="player"
+                android:text="Player"
+                android:textColor="#F4F1F1" />
+
+        <Button
+                android:id="@+id/home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#9589B8"
+                android:onClick="home_page"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/button30"
+            android:layout_width="183dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_add_song"
+            android:foregroundGravity="center"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="create_playlist"
+            android:text="Create Playlist"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.846" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

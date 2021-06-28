@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/testInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="init"
+            android:text="init"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+            android:id="@+id/testClassify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:onClick="classify"
+            android:text="classify"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/testStop"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testInit"
+            app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+            android:id="@+id/testStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="424dp"
+            android:onClick="insertSongWithoutGenre"
+            android:text="stop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testBind" />
+
+    <Button
+            android:id="@+id/testBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bind"
+            android:text="bind"
+            app:layout_constraintBottom_toTopOf="@+id/testClassify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testInit"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+            android:id="@+id/testTextview"
+            android:layout_width="199dp"
+            android:layout_height="163dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="107dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testStop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
